@@ -1,18 +1,19 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+#define stack_size 10
 #include "stackQueue.h"
 
 extern int stac;
 extern char filename[20];
 
-void Push()
+void push()
 {
     char choice,c;
     char newdata[20];
-    int havedata=0;
+    int havedata = 0;
 
-    if(stac==10 && head!=NULL)
+    if(stac == stack_size)
     {
         printf(" \nStack/Queue is full, cant insert an item\n");
         return;
@@ -21,7 +22,7 @@ void Push()
     printf("Would u like to push data from file(y/n):");
     scanf(" %c",&choice);
 
-    if(choice=='y')
+    if(choice == 'y')
     {
 
         int i=0,dataa=0;
@@ -30,18 +31,17 @@ void Push()
         {
             c = fgetc(read_fp);
 
-            while(c!=' ')
+            while(c != ' ')
             {
                 int asci=c;
-                if( (asci>=65 && asci<=90) || (asci>=97 && asci<=122)|| ((asci>=48 && asci<=57) || asci==46) )
+                if( (asci >= 65 && asci <= 90) || (asci >= 97 && asci <= 122)|| ((asci >= 48 && asci <= 57) || asci == 46) )
                 {
-                    newdata[i]=c;
+                    newdata[i] = c;
                     i++;
                 }
 
                 c=fgetc(read_fp);
-                /*if(c!=' ')
-                    continue;*/
+
             }
             newdata[i]='\0';
 
@@ -55,9 +55,9 @@ void Push()
         havedata=1;
     }
 
-    int correct;
+    int correct_input;
 
-    if(havedata==0)
+    if(havedata == 0)
     do
     {
         printf("\nEnter value to push:");
@@ -66,37 +66,37 @@ void Push()
         int scfval=scanf(" %20[a-zA-Z0-9]+[^\n]",newdata);
         fflush(stdin);
 
-        correct=1;
+        correct_input=1;
 
-        if(scfval==0)
+        if(scfval == 0)
         {
             printf(" pls enter valid input\n");
-            correct=0;
+            correct_input = 0;
             //return;
         }
 
-    }while(correct!=1);
+    }while(correct_input != 1);
 
 
     //FILE *fptr=fopen("stackQueueFile.txt","a+");
 
 
-    Node *newnode=(Node*)malloc(sizeof(Node));
+    Node *newnode = (Node*)malloc(sizeof(Node));
 
-    strcpy(newnode->data,newdata);
-    newnode->next=NULL;
+    strcpy(newnode->data, newdata);
+    newnode->next = NULL;
 
     if(head==NULL)
     {
-        newnode->prev=NULL;
-        head=newnode;
-        tail=newnode;
+        newnode->prev = NULL;
+        head = newnode;
+        tail = newnode;
     }
     else
     {
-        newnode->prev=tail;
-        tail->next=newnode;
-        tail=newnode;
+        newnode->prev = tail;
+        tail->next = newnode;
+        tail = newnode;
     }
 
     printf("\nItem pushed successfully\n");

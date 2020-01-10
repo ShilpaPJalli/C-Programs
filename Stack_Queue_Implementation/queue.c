@@ -3,16 +3,16 @@
 
 typedef enum
 {
-    Insert=1,
-    Deletee,
-    Peekk,
-    Displayy,
-    Exit
-}stateType;
+    insert=1,
+    deletee,
+    peekk,
+    displayy,
+    exit
+}queue_operations;
 
-stateType state;
+queue_operations choice;
 
-void Queue()
+void queue_menu()
 {
     stac=0;
     while(1)
@@ -25,21 +25,21 @@ void Queue()
         printf("5: Exit\n");
 
         printf("Enter ur choice: ");
-        scanf("%d",&state);
+        scanf("%d",&choice);
 
         //printf("%s %d",state,state);
 
-        switch(state)
+        switch(choice)
         {
-            case Insert:  Push();
+            case insert:  push();
                           break;
-            case Deletee: QuePop();
+            case deletee: que_pop();
                           break;
-            case Peekk:   QuePeek();
+            case peekk:   que_peek();
                           break;
-            case Displayy: QueDisplay();
+            case displayy: que_display();
                            break;
-            case Exit:     fclose(write_fptr);
+            case exit:     fclose(write_fptr);
                            exit(0);
 
             default:       printf("Please enter valid choice\n");

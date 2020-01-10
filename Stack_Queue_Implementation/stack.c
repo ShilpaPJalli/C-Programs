@@ -2,9 +2,9 @@
 #include "stackQueue.h"
 #include<stdlib.h>
 
-void Stack()
+void stack_menu()
 {
-    void (*funPtr[])()={Push,Pop,Peek,Display};
+    void (*funPtr[])()={push,pop_stack,stack_peek,stack_display};
 
     while(1)
     {

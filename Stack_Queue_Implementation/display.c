@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include "stackQueue.h"
 
-void Display()
+void stack_display()
 {
 
     Node *temp=tail;
@@ -26,18 +26,18 @@ void Display()
 
 }
 
-void Peek()
+void stack_peek()
 {
     printf("\nPeek of stack: %s\n",tail->data);
     fprintf(write_fptr,"\nPeek of stack: %s\n",tail->data);
 }
-void QuePeek()
+void que_peek()
 {
     printf("\nPeek of Queue: %s",head->data);
     fprintf(write_fptr,"\nPeek of Queue: %s\n",head->data);
 }
 
-void QueDisplay()
+void que_display()
 {
     Node *temp=head;
     printf("\nContents of queue\n");

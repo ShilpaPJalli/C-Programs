@@ -2,7 +2,7 @@
 #include "stackQueue.h"
 #include<stdlib.h>
 
-void Pop()
+void pop_stack()
 {
 
     Node *temp=tail;
@@ -40,7 +40,7 @@ void Pop()
     //fclose(fptr);
 }
 
-void QuePop()
+void que_pop()
 {
 
 

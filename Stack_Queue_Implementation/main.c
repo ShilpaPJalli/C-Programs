@@ -27,7 +27,7 @@ int main()
         printf("Cant open file %s\n",filename);
     }
 
-    void (*fun_ptr[])()={Stack,Queue};
+    void (*fun_ptr[])() = {stack_menu,queue_menu};
 
     printf("1: Stack\n");
     printf("2: Queue\n");

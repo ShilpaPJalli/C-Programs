@@ -199,3 +199,7 @@ Contents of queue
  <-  <-
 
 Peek of Queue: (null)
+pushed shilpa
+
+Stack elements are:
+| shilpa |

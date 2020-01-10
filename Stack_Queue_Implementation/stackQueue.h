@@ -18,14 +18,14 @@ FILE *read_fp;
 int stac;
 char filename[20];
 
-void Stack();
-void Queue();
-void Push();
-void Pop();
-void Peek();
-void Display();
-void QuePop();
-void QuePeek();
-void QueDisplay();
+void stack_menu();
+void queue_menu();
+void push();
+void pop_stack();
+void stack_peek();
+void stack_display();
+void que_pop();
+void que_peek();
+void que_display();
 
 #endif // STACKQUEUE_H_INCLUDED
