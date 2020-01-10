@@ -7,7 +7,7 @@ typedef enum
     deletee,
     peekk,
     displayy,
-    exit
+    exitt
 }queue_operations;
 
 queue_operations choice;
@@ -39,7 +39,7 @@ void queue_menu()
                           break;
             case displayy: que_display();
                            break;
-            case exit:     fclose(write_fptr);
+            case exitt:     fclose(write_fptr);
                            exit(0);
 
             default:       printf("Please enter valid choice\n");
