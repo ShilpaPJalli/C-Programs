@@ -1,0 +1,201 @@
+pushed shilpa
+pushed p
+
+Stack elements are:
+| p |
+| shilpa |
+pushed jalli
+pushed 55
+
+Stack elements are:
+| 55 |
+| jalli |
+| p |
+| shilpa |
+pushed shilpa
+pushed p
+pushed jalli
+
+Stack elements are:
+| jalli |
+| p |
+| shilpa |
+pushed shilpa
+
+
+Contents of queue
+ <- shilpa  <-
+pushed p
+
+
+Contents of queue
+ <- shilpa p  <-
+pushed jalli
+
+
+Contents of queue
+ <- shilpa p jalli  <-
+pushed 5.5
+
+
+Contents of queue
+ <- shilpa p jalli 5.5  <-
+
+Que_poped shilpa 
+
+Contents of queue
+ <- p jalli 5.5  <-
+
+Peek of Queue: p
+pushed shilpa
+
+Stack elements are:
+| shilpa |
+pushed p
+
+Stack elements are:
+| p |
+| shilpa |
+pushed jalli
+
+Stack elements are:
+| jalli |
+| p |
+| shilpa |
+pushed 5.5
+
+Stack elements are:
+| 5.5 |
+| jalli |
+| p |
+| shilpa |
+pushed hieght
+
+Stack elements are:
+| hieght |
+| 5.5 |
+| jalli |
+| p |
+| shilpa |
+pushed sulla
+
+Stack elements are:
+| sulla |
+| hieght |
+| 5.5 |
+| jalli |
+| p |
+| shilpa |
+poped sulla 
+
+Stack elements are:
+| hieght |
+| 5.5 |
+| jalli |
+| p |
+| shilpa |
+
+Peek of stack: hieght
+poped hieght 
+
+Stack elements are:
+| 5.5 |
+| jalli |
+| p |
+| shilpa |
+pushed shilpa
+
+
+Contents of queue
+ <- shilpa  <-
+pushed p
+
+
+Contents of queue
+ <- shilpa p  <-
+pushed jalli
+
+
+Contents of queue
+ <- shilpa p jalli  <-
+pushed 5.5
+
+
+Contents of queue
+ <- shilpa p jalli 5.5  <-
+
+Que_poped shilpa 
+
+Contents of queue
+ <- p jalli 5.5  <-
+
+Peek of Queue: p
+
+Que_poped p 
+
+Contents of queue
+ <- jalli 5.5  <-
+
+Peek of Queue: jalli
+
+Que_poped jalli 
+
+Contents of queue
+ <- 5.5  <-
+
+Que_poped 5.5 
+
+Contents of queue
+ <-  <-
+
+Peek of Queue: (null)
+pushed shilpa
+
+Stack elements are:
+| shilpa |
+
+Stack elements are:
+| shilpa |
+pushed shilpa
+pushed asdeed
+
+Stack elements are:
+| asdeed |
+| shilpa |
+pushed shilpa
+
+Stack elements are:
+| shilpa |
+pushed qwe
+
+Stack elements are:
+| qwe |
+| shilpa |
+poped qwe 
+
+Peek of stack: shilpa
+
+Stack elements are:
+| shilpa |
+pushed shilpa
+
+
+Contents of queue
+ <- shilpa  <-
+pushed asad
+
+
+Contents of queue
+ <- shilpa asad  <-
+
+Que_poped shilpa 
+
+Contents of queue
+ <- asad  <-
+
+Que_poped asad 
+
+Contents of queue
+ <-  <-
+
+Peek of Queue: (null)

@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1578647564 source:c:\users\cprogms\stackqueueimp\main.c
+	<stdio.h>
+	<stdlib.h>
+	"stackQueue.h"
+
+1578647717 c:\users\cprogms\stackqueueimp\stackqueue.h
+
+1578647867 source:c:\users\cprogms\stackqueueimp\pop.c
+	<stdio.h>
+	"stackQueue.h"
+	<stdlib.h>
+
+1578647757 source:c:\users\cprogms\stackqueueimp\push.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"stackQueue.h"
+
+1578647857 source:c:\users\cprogms\stackqueueimp\stack.c
+	<stdio.h>
+	"stackQueue.h"
+	<stdlib.h>
+
+1578647876 source:c:\users\cprogms\stackqueueimp\queue.c
+	<stdio.h>
+	"stackQueue.h"
+
+1578647812 source:c:\users\cprogms\stackqueueimp\display.c
+	<stdio.h>
+	"stackQueue.h"
+
