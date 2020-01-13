@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-#define stack_size 10
+#define stack_size 8
 #include "stackQueue.h"
 
 extern int stac;
@@ -19,8 +19,11 @@ void push()
         return;
     }
 
-    printf("Would u like to push data from file(y/n):");
-    scanf(" %c",&choice);
+    if(fopen_failed == 0)
+    {
+        printf("Would u like to push data from file(y/n):");
+        scanf(" %c",&choice);
+    }
 
     if(choice == 'y')
     {
@@ -31,9 +34,10 @@ void push()
         {
             c = fgetc(read_fp);
 
-            while(c != ' ')
+            while(c != ' ')//reading(words) till space
             {
                 int asci=c;
+                //only reading alphabets, integers & floating point from the file
                 if( (asci >= 65 && asci <= 90) || (asci >= 97 && asci <= 122)|| ((asci >= 48 && asci <= 57) || asci == 46) )
                 {
                     newdata[i] = c;
@@ -61,8 +65,7 @@ void push()
     do
     {
         printf("\nEnter value to push:");
-    //while(getchar()!='\n');
-        //getc()
+
         int scfval=scanf(" %20[a-zA-Z0-9]+[^\n]",newdata);
         fflush(stdin);
 
@@ -100,7 +103,7 @@ void push()
     }
 
     printf("\nItem pushed successfully\n");
-    fprintf(write_fptr,"pushed %s\n",newdata);
+    fprintf(write_fptr,"pushed %s\n",newdata);//writing pushed data into a file
     stac++;
     //fclose(fptr);
     //return;

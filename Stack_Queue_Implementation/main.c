@@ -7,6 +7,8 @@ extern FILE *write_fptr,*read_fp;
 extern Node *head;
 extern Node *tail;
 
+extern int fopen_failed;
+
 
 int main()
 {
@@ -17,16 +19,17 @@ int main()
         printf("cant open file\n");
     }
 
-    printf("Enter file name, from which you wanna read data:");
+    printf("Enter file name, from which you wanna read data (input.txt): ");
     scanf("%s",filename);
 
     read_fp = fopen(filename,"r");
 
     if(read_fp == NULL)
     {
-        printf("Cant open file %s\n",filename);
+        printf("Can't open file %s\n\n",filename);
+        fopen_failed=1;
     }
-
+    //initializing array of function ptr with functions
     void (*fun_ptr[])() = {stack_menu,queue_menu};
 
     printf("1: Stack\n");
@@ -42,7 +45,7 @@ int main()
         exit(0);
     }
 
-    (*fun_ptr[choic-1])();
+    (*fun_ptr[choic-1])();//calling function based on user choice
 
     return 0;
 }

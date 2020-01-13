@@ -17,6 +17,7 @@ FILE *read_fp;
 
 int stac;
 char filename[20];
+int fopen_failed;
 
 void stack_menu();
 void queue_menu();

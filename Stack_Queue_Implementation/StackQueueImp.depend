@@ -34,20 +34,20 @@
 	<stdio.h>
 	"stackQueue.h"
 
-1578650492 c:\users\user\desktop\projectgit\c-programs\stack_queue_implementation\stackqueue.h
+1578896980 c:\users\user\desktop\projectgit\c-programs\stack_queue_implementation\stackqueue.h
 
 1578650686 source:c:\users\user\desktop\projectgit\c-programs\stack_queue_implementation\pop.c
 	<stdio.h>
 	"stackQueue.h"
 	<stdlib.h>
 
-1578652830 source:c:\users\user\desktop\projectgit\c-programs\stack_queue_implementation\push.c
+1578900116 source:c:\users\user\desktop\projectgit\c-programs\stack_queue_implementation\push.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"stackQueue.h"
 
-1578650745 source:c:\users\user\desktop\projectgit\c-programs\stack_queue_implementation\queue.c
+1578900263 source:c:\users\user\desktop\projectgit\c-programs\stack_queue_implementation\queue.c
 	<stdio.h>
 	"stackQueue.h"
 
@@ -56,7 +56,7 @@
 	"stackQueue.h"
 	<stdlib.h>
 
-1578650940 source:c:\users\user\desktop\projectgit\c-programs\stack_queue_implementation\main.c
+1578898682 source:c:\users\user\desktop\projectgit\c-programs\stack_queue_implementation\main.c
 	<stdio.h>
 	<stdlib.h>
 	"stackQueue.h"

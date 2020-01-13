@@ -27,8 +27,6 @@ void queue_menu()
         printf("Enter ur choice: ");
         scanf("%d",&choice);
 
-        //printf("%s %d",state,state);
-
         switch(choice)
         {
             case insert:  push();
@@ -44,7 +42,6 @@ void queue_menu()
 
             default:       printf("Please enter valid choice\n");
         }
-
 
     }
 

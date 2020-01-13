@@ -203,3 +203,166 @@ pushed shilpa
 
 Stack elements are:
 | shilpa |
+pushed shilpa
+pushed shilpa
+pushed p
+pushed jalli
+pushed 5.5
+
+
+Contents of queue
+ <- shilpa p jalli 5.5  <-
+pushed hieght
+pushed sulla
+pushed from
+
+
+Contents of queue
+ <- shilpa p jalli 5.5 hieght sulla from  <-
+
+Que_poped shilpa 
+Que_poped p 
+
+Contents of queue
+ <- jalli 5.5 hieght sulla from  <-
+
+Que_poped jalli 
+Que_poped 5.5 
+Que_poped hieght 
+Que_poped sulla 
+
+Contents of queue
+ <- from  <-
+
+Que_poped from 
+
+Contents of queue
+ <-  <-
+pushed qwe
+
+Stack elements are:
+| qwe |
+pushed as
+pushed as
+pushed vf
+pushed ty
+pushed mu
+pushed ect
+
+Stack elements are:
+| ect |
+| mu |
+| ty |
+| vf |
+| as |
+| as |
+| qwe |
+pushed fh
+pushed rty
+
+Stack elements are:
+| rty |
+| fh |
+| ect |
+| mu |
+| ty |
+| vf |
+| as |
+| as |
+| qwe |
+pushed nhyn
+
+Stack elements are:
+| nhyn |
+| rty |
+| fh |
+| ect |
+| mu |
+| ty |
+| vf |
+| as |
+| as |
+| qwe |
+pushed shilpa
+pushed p
+pushed jalli
+pushed 5.5
+pushed hieght
+
+Stack elements are:
+| hieght |
+| 5.5 |
+| jalli |
+| p |
+| shilpa |
+pushed sulla
+pushed from
+pushed badami
+
+Stack elements are:
+| badami |
+| from |
+| sulla |
+| hieght |
+| 5.5 |
+| jalli |
+| p |
+| shilpa |
+pushed shilpa
+pushed p
+pushed jalli
+
+Stack elements are:
+| jalli |
+| p |
+| shilpa |
+pushed 5.5
+pushed qwe
+pushed asde
+
+Stack elements are:
+| asde |
+| qwe |
+| 5.5 |
+| jalli |
+| p |
+| shilpa |
+pushed hieght
+
+Stack elements are:
+| hieght |
+| asde |
+| qwe |
+| 5.5 |
+| jalli |
+| p |
+| shilpa |
+pushed sulla
+
+Stack elements are:
+| sulla |
+| hieght |
+| asde |
+| qwe |
+| 5.5 |
+| jalli |
+| p |
+| shilpa |
+poped sulla 
+
+Stack elements are:
+| hieght |
+| asde |
+| qwe |
+| 5.5 |
+| jalli |
+| p |
+| shilpa |
+pushed shilpa
+pushed p
+
+
+Contents of queue
+ <- shilpa p  <-
+
+Que_poped shilpa 

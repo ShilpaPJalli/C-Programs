@@ -9,10 +9,8 @@ void pop_stack()
 
     if(head==NULL)
     {
-        //Node *tempp=head;
         printf(" Stack is empty, can't delete an item\n");
         return;
-        //free(temp);
     }
 
     if(temp->prev!=NULL)
@@ -29,15 +27,12 @@ void pop_stack()
         tail=head;
         //free(head);
     }
-    //free(temp);
 
-    printf(" Topmost element %s of stack is popped out successfully\n",temp->data);
+    printf(" Topmost element '%s' of stack is popped out successfully\n",temp->data);
 
     fprintf(write_fptr,"poped %s \n",temp->data);
     stac--;
     free(temp);
-
-    //fclose(fptr);
 }
 
 void que_pop()
@@ -48,21 +43,14 @@ void que_pop()
 
     if(head==NULL)
     {
-        //Node *tempp=head;
         printf(" Queue is empty, can't delete an item\n");
         return;
-        //free(temp);
     }
 
 
     head=temp1->next;
-    //head=temp1;
 
-    //free(temp1);
-
-    printf("\nFirst entered element %s is deleted successfully\n",temp1->data);
-
-    //FILE *fptr=fopen("stackQueueFile.txt","a+");
+    printf("\nFirst entered element '%s' is deleted successfully\n",temp1->data);
 
     fprintf(write_fptr,"\nQue_poped %s ",temp1->data);
 
